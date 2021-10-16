@@ -1,7 +1,7 @@
 {
   "name": "student",
   "version": "1.0.0",
-  "description": "",
+  "description": "<!-- PROJECT LOGO -->\r <p align=\"center\">\r     <img src=\"https://github.com/ayushseth07/classroom/blob/main/public/images/logo.png\" height=\"200px\"  align=\"center\"/>\r </p>",
   "main": "app.js",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
@@ -23,5 +23,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "ayush",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": "14.17.4"
+  },
+  "devDependencies": {}
 }
