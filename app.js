@@ -172,7 +172,7 @@ app.get("/home", function(req, res) {
               if(docs.role === "Teacher"){
                 res.redirect("/teachershome");
               }else{
-                res.render("home",{name: req.user.name});
+                res.render("home",{name: req.user.stud.name});
               }
             }
           });}
