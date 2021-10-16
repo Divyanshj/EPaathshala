@@ -1,7 +1,6 @@
 {
   "name": "student",
   "version": "1.0.0",
-  "description": "<!-- PROJECT LOGO -->\r <p align=\"center\">\r     <img src=\"https://github.com/ayushseth07/classroom/blob/main/public/images/logo.png\" height=\"200px\"  align=\"center\"/>\r </p>",
   "main": "app.js",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
