@@ -144,7 +144,7 @@ app.get("/auth/google/home",
   });
 
 app.get("/teachershome", function(req, res) {
-  res.render("teachershome");
+  res.render("teachershome",{name: req.user.name});
 });
 
 app.get("/teachersdashboard", function(req, res) {
