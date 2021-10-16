@@ -172,7 +172,7 @@ app.get("/home", function(req, res) {
               if(docs.role === "Teacher"){
                 res.redirect("/teachershome");
               }else{
-                res.render("home");
+                res.render("home",{name: req.user.name});
               }
             }
           });}
@@ -320,12 +320,6 @@ app.get("/home", function(req, res) {
              res.redirect("/teachersdashboard");
           });
 
-      // return res.json({
-      //   status: 'OK'
-      // location=location;
-      // });
-    // });
-
     app.post("/subject",function(req,res){
       var subject = req.body.sub;
       Student.find({"teacher.subject.name": subject},function(err, ans){
@@ -349,33 +343,6 @@ app.get("/home", function(req, res) {
         }
       })
     })
-
-    // app.post("/subject", function(req,res){
-    //   var subject = req.body.sub;
-      // Student.findOne({"teacher.subject.name": subject},function(err, ans){
-      //   if(err){
-      //     console.log(err);
-      //   }else{
-      //     res.render("dashboard",{subject:subject, assignments: ans.teacher.subject.assignments, tests: ans.teacher.subject.test});
-      //     console.log(ans);
-      //   }
-      // })
-    //
-    // });
-
-    // app.post("/cs", function(req,res){
-    //   var subject = req.body.cs;
-    //   Student.findOne({"teacher.subject.name": subject},function(err, ans){
-    //     if(err){
-    //       console.log(err);
-    //     }else{
-    //       res.render("dashboard",{subject:subject, assignments: ans.teacher.subject.assignments});
-    //       console.log(ans);
-    //     }
-    //   })
-    //
-    // });
-
 
     app.listen(process.env.PORT || 3000, function() {
       console.log("Server started on port 3000.");
