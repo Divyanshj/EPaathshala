@@ -148,7 +148,7 @@ app.get("/teachershome", function(req, res) {
 });
 
 app.get("/teachersdashboard", function(req, res) {
-  res.render("teachersdashboard");
+  res.render("teachersdashboard",{name: req.user.name});
 });
 
 app.get("/login", function(req, res) {
@@ -185,7 +185,7 @@ app.get("/home", function(req, res) {
 
     app.get("/dashboard", function(req, res) {
       if (req.isAuthenticated()) {
-        res.render("dashboard");
+        res.render("dashboard",{name: req.user.name});
       } else {
         res.redirect("/landing");
       }
@@ -326,7 +326,7 @@ app.get("/home", function(req, res) {
         if(err){
           console.log(err);
         }else{
-          res.render("selectteacher",{subject: subject, tnames: ans});
+          res.render("selectteacher",{subject: subject, tnames: ans,name:req.user.stud.name});
         }
       })
 
@@ -338,7 +338,7 @@ app.get("/home", function(req, res) {
         if(err){
           console.log(err);
         }else{
-          res.render("dashboard",{subject:subject, assignments: ans.teacher.subject.assignments, tests: ans.teacher.subject.test});
+          res.render("dashboard",{subject:subject, assignments: ans.teacher.subject.assignments, tests: ans.teacher.subject.test , name:req.user.stud.name});
           console.log(ans);
         }
       })
