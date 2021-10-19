@@ -10,7 +10,7 @@
 A platform for <strong>Online Learning </strong>
 <br/>
 Paathshala is an interactive online education platform which aims to provide an easier access to education. <br>
-It has features like signup and login, which make it more secure, assignment submission, test submission, taking online test, video conferencing, 
+It has features like signup and login, which make it more secure, assignment submission, test submission, taking online test, video conferencing,
 It has a user-friendly user interface which is very convenient to use for anyone.
 
 ## Built With
@@ -52,9 +52,6 @@ cd classroom
 ## MADE BY :-
 <ul>
  <li><a href="https://github.com/ayushseth07">Ayush Seth</a></li>
- <li><a href="https://github.com/ayushsagar10">Aayush Sagar</a></li>
- <li><a href="https://github.com/krazyni9e">Harsh Jha Anand</a></li>
- <li><a href="https://github.com/Divyanshj/">Divyansh Jain</a></li>
 </ul>
 
 ## Features

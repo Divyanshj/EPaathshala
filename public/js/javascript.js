@@ -1,7 +1,3 @@
-console.log(1);
-// if (document.getElementById("role").value==="Teacher"){
-//   document.getElementById("teacher");
-// }
 
 function func(){
   var value=document.getElementById("role").value;
@@ -15,5 +11,3 @@ function func(){
 }
 
 document.getElementById("role").addEventListener("click", func);
-// var value=document.getElementById("role").value;
-// console.log(value);
